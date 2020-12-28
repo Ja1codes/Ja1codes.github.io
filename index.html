@@ -11,20 +11,35 @@
     
     <style>
         .container {
-            background-color: rgba(143, 218, 205, 0.856)
+            background-color: rgba(143, 218, 206, 0.521);
+            
         }
-        .header{
-            background-color: aqua;
+        body{
+          background-image: url("img/bg.png");
         }
     </style>
 </head>
 <body>
-    <div class="page-header">
-        <h1>WUPHF!<small> always nice to get some wuphfs.</small></h1>
-    </div>    
 
+  <div class="page-header" style="padding-top: 10px;">
+      <h1>WUPHF!<small> always nice to get some wuphfs.</small></h1>
+  </div>  
+  
+     
+  <nav class="navbar navbar-inverse navbar-fixed-top" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"> Ja1Codes</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+  </nav>
 
-    <div class="container">
+  <div class="container">
         <div class="row">
           <div class="panel-group">
             <div class="panel panel-default">
@@ -91,7 +106,7 @@
               <span class="caret"></span></button>
               <ul class="dropdown-menu dropdown-menu-left" role="menu">
                 <li class="disabled"><a  href="#">HTML</a></li>
-                <li class=""><a  href="#">CSS</a></li>
+                <li> <a href="#"> CSS</a></li>
                 <li class="active"><a  href="#">JavaScript</a></li>
                 
               </ul>
@@ -127,21 +142,54 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, aperiam?</p>
             </div>
           </div>
+
           <div class="row">
-            <div class="col-sm-4">
-                <h3>Monday</h3>
-                <p> <mark>Lorem</mark> , <abbr title="Doctor of Philosophy" class="initialism">PHD</abbr>  dolor sit amet consectetur adipisicing elit. Minima mollitia nihil a similique vel sed perferendis, nesciunt saepe deserunt! Eum cupiditate at veritatis vero voluptatibus corporis saepe explicabo dolor esse!
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Tuesday</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia nihil a similique vel sed perferendis, nesciunt saepe deserunt! Eum cupiditate at veritatis vero voluptatibus corporis saepe explicabo dolor esse!</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Wednesday</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia nihil a similique vel sed perferendis, nesciunt saepe deserunt! Eum cupiditate at veritatis vero voluptatibus corporis saepe explicabo dolor esse!</p>
-            </div>
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#days1">WeekDays 1</a></li>
+              <li><a data-toggle="tab" href="#days2">WeekDays 2</a></li>
+              <li><a data-toggle="tab" href="#days3">Weekends</a></li>
+            </ul>
           </div>
+          <!--Days Tabs-->
+          <div class="tab-content">
+            <div id="days1" class="row tab-pane fade in active">
+              <div class="col-sm-4">
+                  <h3>Monday</h3>
+                  <p> <mark>Lorem</mark> , <abbr title="Doctor of Philosophy" class="initialism">PHD</abbr>  dolor sit amet consectetur adipisicing elit. Minima mollitia nihil a similique vel sed perferendis, nesciunt saepe deserunt! Eum cupiditate at veritatis vero voluptatibus corporis saepe explicabo dolor esse!
+                  </p>
+              </div>
+              <div class="col-sm-4">
+                  <h3>Tuesday</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia nihil a similique vel sed perferendis, nesciunt saepe deserunt! Eum cupiditate at veritatis vero voluptatibus corporis saepe explicabo dolor esse!</p>
+              </div>
+              <div class="col-sm-4">
+                  <h3>Wednesday</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia nihil a similique vel sed perferendis, nesciunt saepe deserunt! Eum cupiditate at veritatis vero voluptatibus corporis saepe explicabo dolor esse!</p>
+              </div>
+            </div>
+            <div id="days2" class="row tab-pane fade">
+              <div class="col-sm-6">
+                <h3>Thursdays</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci ea assumenda quia nobis nihil at architecto fuga iure et.</p>
+              </div>
+              <div class="col-sm-6">
+                <h3>Friday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquam est quaerat id nulla. Quibusdam temporibus exercitationem numquam ratione tempore?</p>
+              </div>
+            </div>
+            <div id="days3" class="row tab-pane fade">
+              <div class="col-sm-6">
+                <h3>Saturday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci ea assumenda quia nobis nihil at architecto fuga iure et.</p>
+              </div>
+              <div class="col-sm-6">
+                <h3>Sunday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquam est quaerat id nulla. Quibusdam temporibus exercitationem numquam ratione tempore?</p>
+              </div>
+            </div>
+
+          </div>
+          <!--End of Days Tabs-->
           <div class="row">
             <ul class="list-group">
               <li class="list-group-item list-group-item-success">List Group Item 1 <span class="badge">5</span></li>
